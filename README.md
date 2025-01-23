@@ -12,31 +12,17 @@ Você pode acessar o portfólio online em: https://elianemaciel.github.io/
 - Styled-Components: Para estilização baseada em componentes.
 
 #### 📦 Como Executar
-Clone o repositório:
-```
-git clone https://github.com/seuusuario/portfolio-react.git  
-```
 
-#### Instale as dependências:
+- Instale as dependências:
 
-bash
-Copiar
-Editar
+```
 cd portfolio-react  
 npm install  
-Inicie o servidor de desenvolvimento:
 
-bash
-Copiar
-Editar
-npm start  
-Abra o navegador e acesse http://localhost:3000.
+```
+- Inicie o servidor de desenvolvimento:
 
-📜 Licença
-Este projeto está licenciado sob a MIT License. Sinta-se à vontade para utilizá-lo como base para seu próprio portfólio!
-
-✉️ Contato
-Se tiver dúvidas ou quiser entrar em contato, me envie uma mensagem:
-
-Email: seuemail@example.com
-LinkedIn: seulinkedin.com
+```
+npm run dev
+```
+ 
