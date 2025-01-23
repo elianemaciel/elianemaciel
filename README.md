@@ -16,7 +16,7 @@ Você pode acessar o portfólio online em: https://elianemaciel.github.io/
 - Instale as dependências:
 
 ```
-cd portfolio-react  
+cd elianemaciel.github.io
 npm install  
 
 ```
