@@ -389,6 +389,11 @@ interface Config {
    */
   skills?: Array<string>;
 
+
+  /**
+   * Tools list
+   */
+  tools?: Array<string>;
   /**
    * Experience list
    */

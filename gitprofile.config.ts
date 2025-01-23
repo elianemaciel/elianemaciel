@@ -39,7 +39,7 @@ const CONFIG = {
             conteúdo a grandes marcas. Pensada em modelo Mobile First o layout foi adaptado para a\
             melhor experiência do usuário.',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+            './images/wake2.png',
           link: 'https://app.wakecreators.com/',
           tech: [ 'Microfrontends e Microserviços', 'React', 'NodeJS', 'NextJS', 'Mongodb', 'MySQL', 'Redis', 'CI/CD'],
           function: ['Tech Lead - Scrum Master', 'Full Stack'],
@@ -51,7 +51,7 @@ const CONFIG = {
             'Wake Community é uma plataforma que, Spor meio de produção relevante e espontânea de conteúdo dos seus membros,\
             potencializa a comunicação direta da marca com o seu target.',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+            './images/comunidades.png',
           link: 'https://consultoratreinadora.com.br/courses',
           tech: ['Angular', 'Node JS', 'Mongodb', 'Redis', 'CI/CD'],
           function: ['Tech Lead - Scrum Master', 'Desenvolvedora Frontend'],
@@ -59,16 +59,28 @@ const CONFIG = {
           
         },
         {
-          title: 'Growth Plataforma',
+          title: 'Site - Natus Desenvolvimento Humano',
+          description:
+            'Site corporativo da empresa Natus Desenvolvimento Humano.',
+          imageUrl:
+            './images/natus.png',
+          link: 'https://consultoratreinadora.com.br/courses',
+          tech: ['NextJS', 'React JS', 'CI/CD'],
+          function: ['Desenvolvedora'],
+          results: '',
+          
+        },
+        {
+          title: 'Contentools Plataforma',
           description:
             'Wake Community é uma plataforma que, por meio de produção relevante e espontânea de conteúdo dos seus membros,\
             potencializa a comunicação direta da marca com o seu target.',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://consultoratreinadora.com.br/courses',
+            './images/contentools.png',
+          link: 'https://contentools.com/',
           tech: ['React', 'Python', 'PostgresSQL', 'CI/CD'],
           function: ['Frontend'],
-          results: 'Melhoria na satisfação dos usuários. ',
+          results: '',
         },
         {
           title: 'Django Girls',
@@ -131,6 +143,13 @@ const CONFIG = {
     'Git',
     'MongoDB',
   ],
+  tools: [
+    'YouTrack',
+    'Notion',
+    'Jira',
+    'ClickUp',
+    'Trelo'
+  ],
   experiences: [
     {
       company: 'Ânima Educação | Unifacs',
@@ -185,20 +204,26 @@ const CONFIG = {
   ],
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
+      institution: 'UFBA',
+      degree: 'Mestrado',
+      from: '2024',
+      to: 'Em andamento',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'Unyleya',
+      degree: 'Pós Graduação em Gestão Ágil de Projetos',
+      from: '2021',
+      to: '2022',
+    },
+    {
+      institution: 'Universidade de Caxias do Sul',
+      degree: 'Graduação em Ciência da Computação',
+      from: '2014',
+      to: '2021',
     },
   ],
   publications: [
-    {
+    /*{
       title: 'Publication Title',
       conferenceName: '',
       journalName: 'Journal Name',
@@ -215,7 +240,7 @@ const CONFIG = {
       link: 'https://example.com',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
+    },*/
   ],
   // Display articles from your medium or dev account. (Optional)
   blog: {

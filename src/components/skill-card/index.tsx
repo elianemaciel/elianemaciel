@@ -3,9 +3,11 @@ import { skeleton } from '../../utils';
 const SkillCard = ({
   loading,
   skills,
+  tools
 }: {
   loading: boolean;
   skills: string[];
+  tools: string[];
 }) => {
   const renderSkeleton = () => {
     const array = [];
@@ -28,7 +30,7 @@ const SkillCard = ({
             {loading ? (
               skeleton({ widthCls: 'w-32', heightCls: 'h-8' })
             ) : (
-              <span className="text-base-content opacity-70">Skills</span>
+              <span className="text-base-content opacity-70">Habilidades Técnicas</span>
             )}
           </h5>
         </div>
@@ -42,6 +44,23 @@ const SkillCard = ({
                     className="m-1 text-xs inline-flex items-center font-bold leading-sm px-3 py-1 badge-primary bg-opacity-90 rounded-full"
                   >
                     {skill}
+                  </div>
+                ))}
+          </div>
+        </div>
+        <h5 className="card-title">
+          <span className="text-base-content opacity-70">Ferramentas</span>
+        </h5>
+        <div className="p-3 flow-root">
+          <div className="-m-1 flex flex-wrap justify-center">
+            {loading
+              ? renderSkeleton()
+              : tools.map((tool, index) => (
+                  <div
+                    key={index}
+                    className="m-1 text-xs inline-flex items-center font-bold leading-sm px-3 py-1 badge-primary bg-opacity-90 rounded-full"
+                  >
+                    {tool}
                   </div>
                 ))}
           </div>

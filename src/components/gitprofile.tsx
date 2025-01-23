@@ -222,6 +222,7 @@ const GitProfile = ({ config }: { config: Config }) => {
                       <SkillCard
                         loading={loading}
                         skills={sanitizedConfig.skills}
+                        tools={sanitizedConfig.tools}
                       />
                     )}
                     

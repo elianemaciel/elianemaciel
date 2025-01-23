@@ -98,10 +98,11 @@ const ExternalProjectCard = ({
                   </h2>
                   {item.imageUrl && (
                     <div className="avatar opacity-90">
-                      <div className="w-24 h-24 mask mask-squircle">
+                      <div className="w-96 h-96 mask ">
                         <LazyImage
                           src={item.imageUrl}
                           alt={'thumbnail'}
+                          style={{ objectFit: 'contain' }}
                           placeholder={skeleton({
                             widthCls: 'w-full',
                             heightCls: 'h-full',
@@ -138,10 +139,14 @@ const ExternalProjectCard = ({
                         </div>
                       ))}
                     </div>
-                    <p className="mt-4"><strong>Contribuições e Resultados</strong></p>
-                    <p className="mt-2 text-base-content text-opacity-60 text-sm text-justify">
-                      {item.results}
-                    </p>
+                    {item?.results &&
+                    <>
+                      <p className="mt-4"><strong>Contribuições e Resultados</strong></p>
+                      <p className="mt-2 text-base-content text-opacity-60 text-sm text-justify">
+                        {item?.results}
+                      </p>
+                    </>
+                    }
                     
                 </div>
               </div>

@@ -27,7 +27,6 @@ export const getSanitizedConfig = (
   config: Config,
 ): SanitizedConfig | Record<string, never> => {
   try {
-    console.log(config.blog);
     return {
       github: {
         username: config.github.username,
@@ -87,6 +86,7 @@ export const getSanitizedConfig = (
         fileUrl: config?.resume?.fileUrl || '',
       },
       skills: config?.skills || [],
+      tools: config?.tools || [],
       experiences:
         config?.experiences?.filter(
           (experience) =>
