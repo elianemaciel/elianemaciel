@@ -82,7 +82,7 @@ interface ExternalProjects {
     link: string;
     tech: string[];
     function: string[];
-    results: string;
+    results: string[];
   }[];
 }
 

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import LazyImage from '../lazy-image';
 import { AiOutlineContainer } from 'react-icons/ai';
 import { getDevPost, getMediumPost } from '@arifszn/blog-js';
-import { formatDistance } from 'date-fns';
+import { intlFormat } from 'date-fns';
 import { SanitizedBlog } from '../../interfaces/sanitized-config';
 import { ga, skeleton } from '../../utils';
 import { Article } from '../../interfaces/article';
@@ -139,8 +139,8 @@ const BlogCard = ({
                       {article.title}
                     </h2>
                     <p className="text-base-content opacity-50 text-xs">
-                      {formatDistance(article.publishedAt, new Date(), {
-                        addSuffix: true,
+                      {intlFormat(article.publishedAt, {
+                        locale: 'pt-BR',
                       })}
                     </p>
                     <p className="mt-3 text-base-content text-opacity-60 text-sm">

@@ -28,7 +28,7 @@ export interface SanitizedExternalProject {
   link: string;
   tech: string[];
   function: string[];
-  results: string;
+  results: string[];
 }
 
 export interface SanitizedExternalProjects {

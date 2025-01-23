@@ -98,7 +98,7 @@ const ExternalProjectCard = ({
                   </h2>
                   {item.imageUrl && (
                     <div className="avatar opacity-90">
-                      <div className="w-96 h-96 mask ">
+                      <div className="w-52 h-52 mask mask-squircle">
                         <LazyImage
                           src={item.imageUrl}
                           alt={'thumbnail'}
@@ -142,9 +142,11 @@ const ExternalProjectCard = ({
                     {item?.results &&
                     <>
                       <p className="mt-4"><strong>Contribuições e Resultados</strong></p>
-                      <p className="mt-2 text-base-content text-opacity-60 text-sm text-justify">
-                        {item?.results}
-                      </p>
+                      <ul style={{ listStyle: 'disc'}} className="mt-2 text-base-content text-opacity-60 text-sm text-justify">
+                        {item?.results.map((i, index) => 
+                          <li key={index}>{i}</li>
+                        )}
+                      </ul>
                     </>
                     }
                     

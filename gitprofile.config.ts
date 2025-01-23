@@ -33,17 +33,19 @@ const CONFIG = {
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Redesign Wake Creators Hub',
+          title: 'Desenvolvimento da nova plataforma da Wake Creators HUB',
           description:
-            'A nova plataforma da Wake Creators HUB tem o objetivo de conectar criadores de\
-            conteúdo a grandes marcas. Pensada em modelo Mobile First o layout foi adaptado para a\
-            melhor experiência do usuário.',
+            'Conectar criadores de conteúdo a grandes marcas, garantindo uma experiência fluida e otimizada para dispositivos móveis, seguindo o conceito de Mobile First.',
           imageUrl:
             './images/wake2.png',
           link: 'https://app.wakecreators.com/',
           tech: [ 'Microfrontends e Microserviços', 'React', 'NodeJS', 'NextJS', 'Mongodb', 'MySQL', 'Redis', 'CI/CD'],
           function: ['Tech Lead - Scrum Master', 'Full Stack'],
-          results: 'Melhoria na satisfação dos usuários. Redução no número de chamados e bugs. Alinhamento do time com os príncipios do Manifesto Ágil.',
+          results: ['Implementação de uma experiência de usuário otimizada, adaptada a dispositivos móveis, que facilita a interação entre criadores e marcas.',
+            'Estruturação modular da aplicação utilizando Microfrontends e Microserviços, permitindo escalabilidade e manutenibilidade.',
+            'Automação de processos de entrega e deploy contínuos com práticas de CI/CD, assegurando agilidade e consistência no ciclo de desenvolvimento.',
+            'Atuei como desenvolvedora frontend, sendo responsável pela manutenção e evolução de uma biblioteca de componentes e de um design system, promovendo consistência visual e reutilização de código em toda a plataforma.',
+            'Facilitei e conduzi cerimônias ágeis, como dailies, plannings, reviews, e retrospectivas, utilizando práticas de Management 3.0 para engajar a equipe e aumentar a produtividade.'],
         },
         {
           title: 'Redesign - Plataforma de Comunidades',
@@ -55,44 +57,73 @@ const CONFIG = {
           link: 'https://consultoratreinadora.com.br/courses',
           tech: ['Angular', 'Node JS', 'Mongodb', 'Redis', 'CI/CD'],
           function: ['Tech Lead - Scrum Master', 'Desenvolvedora Frontend'],
-          results: 'Melhoria na satisfação dos usuários. Alinhamento do time com os príncipios do Manifesto Ágil',
+          results: ['Melhoria na satisfação dos usuários. Redução no número de chamados e bugs. Alinhamento do time com os príncipios do Manifesto Ágil.', 'Atuei como desenvolvedora frontend, sendo responsável pela manutenção e evolução de uma biblioteca de componentes e de um design system, promovendo consistência visual e reutilização de código em toda a plataforma.',
+            'Facilitei e conduzi cerimônias ágeis, como dailies, plannings, reviews, e retrospectivas, utilizando práticas de Management 3.0 para engajar a equipe e aumentar a produtividade.'],
           
         },
         {
-          title: 'Site - Natus Desenvolvimento Humano',
+          title: 'Desenvolvimento do site corporativo da empresa Natus Desenvolvimento Humano',
           description:
-            'Site corporativo da empresa Natus Desenvolvimento Humano.',
+            'Criar uma presença digital profissional para a empresa, destacando seus serviços e valores de forma clara e atrativa.',
           imageUrl:
             './images/natus.png',
-          link: 'https://consultoratreinadora.com.br/courses',
-          tech: ['NextJS', 'React JS', 'CI/CD'],
+          link: 'https://natus-next-v3.vercel.app/',
+          tech: ['NextJS', 'React JS', 'CI/CD', 'Tailwind UI'],
           function: ['Desenvolvedora'],
-          results: '',
+          results: ['Estruturação de um site responsivo, garantindo uma experiência fluida em diferentes dispositivos (desktop, tablet e mobile).',
+            'Planejamento das funcionalidades e do layout com base em análises detalhadas das necessidades do cliente e do público-alvo.',
+            'Utilização de boas práticas de design e desenvolvimento para criar uma interface intuitiva e moderna.',
+            'Realização de todas as etapas do projeto de forma independente, desde o levantamento de requisitos até a prototipagem e desenvolvimento.',
+            'Desenvolvimento do site utilizando tecnologias modernas (incluir as tecnologias usadas, como HTML, CSS, JavaScript, React, etc., caso aplicável).',
+            'Análise contínua das necessidades do cliente para garantir a entrega de uma solução personalizada e de alta qualidade.',
+          ],
           
+        },
+        {
+          title: 'Organização do Django Girls - Região da Serra Gaúcha',
+          description:
+            'Incentivar mulheres a ingressarem e se desenvolverem na área de Tecnologia da Informação por meio de workshops e mentorias.',
+          imageUrl:
+            './images/django.png',
+          link: 'https://djangogirls.org/pt-br/',
+          tech: ['Python', 'Django'],
+          function: ['Organizadora'],
+          results: [
+            'Organização bem-sucedida de quatro edições do evento, impactando positivamente a comunidade local e ampliando a inclusão de mulheres na TI.',
+            'Capacitação de participantes através de workshops práticos, promovendo o aprendizado de conceitos fundamentais de programação e desenvolvimento web.',
+            'Criação de um ambiente acolhedor e inspirador, fortalecendo a rede de apoio e conexão entre mulheres interessadas na área tecnológica.',
+            'Planejamento e execução das edições do evento, incluindo coordenação logística, comunicação, captação de patrocinadores e formação de equipes de mentoria.',
+            'Divulgação do evento em plataformas locais e redes sociais para atrair participantes e aumentar o alcance da iniciativa.',
+            'Criação de estratégias para garantir a representatividade e acessibilidade das edições, incluindo organização de espaços adequados e materiais inclusivos.'
+          ],
         },
         {
           title: 'Contentools Plataforma',
           description:
-            'Wake Community é uma plataforma que, por meio de produção relevante e espontânea de conteúdo dos seus membros,\
-            potencializa a comunicação direta da marca com o seu target.',
+            'A Contentools é uma plataforma de Marketing de Conteúdo que realiza o planejamento, produção e a publicação dos conteúdos nas redes sociais.',
           imageUrl:
             './images/contentools.png',
           link: 'https://contentools.com/',
           tech: ['React', 'Python', 'PostgresSQL', 'CI/CD'],
           function: ['Frontend'],
-          results: '',
+          results: [],
         },
         {
-          title: 'Django Girls',
+          title: 'Desenvolvimento do Registro Brasileiro de Ensaios Clínicos (ReBEC)',
           description:
-            'Django Girls é um evento com foco em incentivar mulheres na TI. Organizei quatro edições na região da serra gaúcha.',
+            'Criar e manter uma plataforma virtual de acesso livre para o registro de estudos experimentais e não-experimentais realizados em seres humanos, promovendo transparência e acesso à informação para a comunidade científica e o público geral.',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://consultoratreinadora.com.br/courses',
-          tech: ['Python', 'Django'],
-          function: ['Organizadora'],
-          results: 'Planejamento e organização do evento. ',
+            './images/rebec_logo.png',
+          link: 'https://ensaiosclinicos.gov.br/',
+          tech: ['Python', 'Django', 'Bootstrap', 'PostgresSQL'],
+          function: ['Desenvolvedora'],
+          results: [
+            'Colaborei no desenvolvimento de funcionalidades para facilitar o registro e consulta de estudos clínicos, otimizando a experiência dos usuários (pesquisadores, instituições e público geral).',
+            'Trabalhei na implementação de boas práticas de desenvolvimento web, garantindo acessibilidade, performance e segurança da aplicação.',
+            'Contribuí para a integração de sistemas e a estruturação de bancos de dados para gerenciar eficientemente as informações dos estudos registrados.'
+          ],
         },
+        
       ],
     },
   },
@@ -130,6 +161,7 @@ const CONFIG = {
   skills: [
     'Scrum',
     'Liderança',
+    'Management 3.0',
     'Gestão de Projetos',
     'JavaScript',
     'TypeScript',
@@ -156,35 +188,35 @@ const CONFIG = {
       position: 'Professora',
       from: 'Mar 2024',
       to: 'Atual',
-      companyLink: 'https://example.com',
+      companyLink: 'https://www.unifacs.br/',
     },
     {
       company: 'Wake Creators',
       position: 'Tech Lead | Scrum Master',
       from: 'Out 2020',
       to: 'Dez 2024',
-      companyLink: 'https://example.com',
+      companyLink: 'https://wakecreators.com.br/',
     },
     {
       company: 'GrowthHackers',
       position: 'Frontend Developer ',
       from: 'Jan 2020',
       to: 'Set 2020',
-      companyLink: 'https://example.com',
+      companyLink: 'https://growthhackers.com/',
     },
     {
       company: 'Cake ERP | NL Informática',
       position: 'Software Developer Full Stack',
       from: 'Jul 2018',
       to: 'Jan 2020',
-      companyLink: 'https://example.com',
+      companyLink: 'https://www.nl.com.br/',
     },
     {
       company: 'Vendabem Informática',
       position: 'Software Developer',
       from: 'Jan 2017',
       to: 'Jun 2018',
-      companyLink: 'https://example.com',
+      companyLink: 'https://www.vendabem.com.br/',
     },
     {
       company: 'Instituto Communitas',
@@ -249,17 +281,17 @@ const CONFIG = {
     limit: 2, // How many articles to display. Max is 10.
     courses: [{
       title: 'Desenvolvimento Web com Framework React',
-      thumbnail: 'gfdgdf',
+      thumbnail: './images/react.png',
       link: 'https://sou.ucs.br/extensao/detalhes/desenvolvimento-web-com-framework-react-EXT035982/',
-      publishedAt: new Date(),
+      publishedAt: new Date('04-12-2025'),
       description: 'Desenvolver um site estático com acesso a APIs públicas.',
       categories: ['frontend', 'typescript', 'learning', 'React']
     },
     {
       title: 'Desenvolvimento Web: Construção de API com Node.Js',
-      thumbnail: 'gfdgdf',
+      thumbnail: './images/nest-js.png',
       link: 'https://sou.ucs.br/extensao/detalhes/desenvolvimento-web-construcao-de-api-com-node-js-EXT035984/',
-      publishedAt: new Date(),
+      publishedAt: new Date('04-08-2025'),
       description: 'Desenvolver uma API com integração com banco de dados, aprendendo a linguagem de programação TypeScript.',
       categories: ['backend', 'typescript', 'learning', 'Node JS', 'NestJS']
     }
