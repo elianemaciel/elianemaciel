@@ -11,14 +11,13 @@ Você pode acessar o portfólio online em: https://elianemaciel.github.io/
 - React Router: Para navegação entre páginas.
 - Styled-Components: Para estilização baseada em componentes.
 
-📦 Como Executar Localmente
+#### 📦 Como Executar
 Clone o repositório:
-
-bash
-Copiar
-Editar
+```
 git clone https://github.com/seuusuario/portfolio-react.git  
-Instale as dependências:
+```
+
+#### Instale as dependências:
 
 bash
 Copiar
