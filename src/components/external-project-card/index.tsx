@@ -68,94 +68,111 @@ const ExternalProjectCard = ({
 
   const renderExternalProjects = () => {
     return externalProjects.map((item, index) => (
-      <a
-        className="card shadow-lg compact bg-base-100 cursor-pointer"
-        key={index}
-        href={item.link}
-        onClick={(e) => {
-          e.preventDefault();
-
-          try {
-            if (googleAnalyticId) {
-              ga.event('Click External Project', {
-                post: item.title,
-              });
-            }
-          } catch (error) {
-            console.error(error);
-          }
-
-          window?.open(item.link, '_blank');
-        }}
-      >
-        <div className="p-8 h-full w-full">
-          <div className="flex items-center flex-col">
-            <div className="w-full">
-              <div className="px-4">
-                <div className="text-center w-full">
-                  <h2 className="font-medium text-center opacity-60 mb-2">
-                    {item.title}
-                  </h2>
-                  {item.imageUrl && (
-                    <div className="avatar opacity-90">
-                      <div className="w-52 h-52 mask mask-squircle">
-                        <LazyImage
-                          src={item.imageUrl}
-                          alt={'thumbnail'}
-                          style={{ objectFit: 'contain' }}
-                          placeholder={skeleton({
-                            widthCls: 'w-full',
-                            heightCls: 'h-full',
-                            shape: '',
-                          })}
-                        />
-                      </div>
+      <div className="card shadow-lg compact bg-base-100 p-8 h-full w-full" key={index}>
+        <div className="flex items-center flex-col">
+          <div className="w-full">
+            <div className="px-4">
+              <div className="text-center w-full">
+                <h2 className="font-medium text-center opacity-60 mb-2">
+                  {item.title}
+                </h2>
+                {item.imageUrl && (
+                  <div className="avatar opacity-90">
+                    <div className="w-52 h-52 mask mask-squircle">
+                      <LazyImage
+                        src={item.imageUrl}
+                        alt={'thumbnail'}
+                        style={{ objectFit: 'contain' }}
+                        placeholder={skeleton({
+                          widthCls: 'w-full',
+                          heightCls: 'h-full',
+                          shape: '',
+                        })}
+                      />
                     </div>
-                  )}
-                  <p className="mt-2 text-base-content text-opacity-60 text-sm text-justify">
-                    {item.description}
-                  </p>
-                  <p className="mt-4"><strong>Tecnologias</strong></p>
-                  <div className="mt-4 flex items-center flex-wrap justify-center md:justify-start">
-                      
-                      {item.tech.map((category, index2) => (
-                        <div
-                          className="py-2 px-4 text-xs leading-3 rounded-full bg-base-300 mr-1 mb-1 opacity-50 text-base-content"
-                          key={index2}
-                        >
-                          {category}
-                        </div>
-                      ))}
+                  </div>
+                )}
+                <p className="mt-2 text-base-content text-opacity-60 text-sm text-justify">
+                  {item.description}
+                </p>
+                <p className="mt-4">
+                  <strong>Tecnologias</strong>
+                </p>
+                <div className="mt-4 flex items-center flex-wrap justify-center">
+                  {item.tech.map((category, index2) => (
+                    <div
+                      className="py-2 px-4 text-xs leading-3 rounded-full bg-base-300 mr-1 mb-1 opacity-50 text-base-content"
+                      key={index2}
+                    >
+                      {category}
                     </div>
-                    <p className="mt-4"><strong>Funções</strong></p>
-                    <div className="mt-4 flex items-center flex-wrap justify-center md:justify-start">
-                      
-                      {item.function.map((category, index2) => (
-                        <div
-                          className="py-2 px-4 text-xs leading-3 rounded-full bg-base-300 mr-1 mb-1 opacity-50 text-base-content"
-                          key={index2}
-                        >
-                          {category}
-                        </div>
-                      ))}
-                    </div>
-                    {item?.results &&
-                    <>
-                      <p className="mt-4"><strong>Contribuições e Resultados</strong></p>
-                      <ul style={{ listStyle: 'disc'}} className="mt-2 text-base-content text-opacity-60 text-sm text-justify">
-                        {item?.results.map((i, index) => 
-                          <li key={index}>{i}</li>
-                        )}
-                      </ul>
-                    </>
-                    }
-                    
+                  ))}
                 </div>
+                {item?.link && (
+                  <>
+                    <p className="mt-4">
+                      <strong>Link</strong>
+                    </p>
+                    <div className="mt-4 flex items-center flex-wrap justify-center">
+                      <a
+                        href={item.link}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {item.link}
+                      </a>
+                    </div>
+                  </>
+                )}
+                {item?.repository && (
+                  <>
+                    <p className="mt-4">
+                      <strong>Repositório</strong>
+                    </p>
+                    <div className="mt-4 flex items-center flex-wrap justify-center">
+                      <a
+                        href={item.repository}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {item.repository}
+                      </a>
+                    </div>
+                  </>
+                )}
+                <p className="mt-4">
+                  <strong>Funções</strong>
+                </p>
+                <div className="mt-4 flex items-center flex-wrap justify-center md:justify-start">
+                  {item.function.map((category, index2) => (
+                    <div
+                      className="py-2 px-4 text-xs leading-3 rounded-full bg-base-300 mr-1 mb-1 opacity-50 text-base-content"
+                      key={index2}
+                    >
+                      {category}
+                    </div>
+                  ))}
+                </div>
+                {item?.results && (
+                  <>
+                    <p className="mt-4">
+                      <strong>Contribuições e Resultados</strong>
+                    </p>
+                    <ul
+                      style={{ listStyle: 'disc' }}
+                      className="mt-2 text-base-content text-opacity-60 text-sm text-justify"
+                    >
+                      {item?.results.map((i, index) => (
+                        <li key={index}>{i}</li>
+                      ))}
+                    </ul>
+                  </>
+                )}
               </div>
             </div>
           </div>
         </div>
-      </a>
+      </div>
     ));
   };
 

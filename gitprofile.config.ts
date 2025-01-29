@@ -14,10 +14,10 @@ const CONFIG = {
     github: {
       display: true, // Display GitHub projects?
       header: 'Github Projetos',
-      mode: 'automatic', // Mode can be: 'automatic' or 'manual'
+      mode: 'manual', // Mode can be: 'automatic' or 'manual'
       automatic: {
         sortBy: 'stars', // Sort projects by 'stars' or 'updated'
-        limit: 4, // How many projects to display.
+        limit: 20, // How many projects to display.
         exclude: {
           forks: false, // Forked projects will not be displayed if set to true.
           projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
@@ -25,7 +25,11 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: ['squidit/react-css', 'elianemaciel/CETEC-Programacao2-2023',
+          'elianemaciel/CETEC-Python-PySimplegui', 'elianemaciel/desafio-develcode',
+          'PyladiesCaxias/PyladiesCaxias.github.io', 'PyladiesCaxias/gerador-certificados',
+          'elianemaciel/curso-react-ucs', 'squidit/css', 'elianemaciel/natusdesenvolvimento',
+          'elianemaciel/API_NESTJS_TS', 'elianemaciel/cakeerp-curso-talentos-2019'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
@@ -117,11 +121,23 @@ const CONFIG = {
           link: 'https://ensaiosclinicos.gov.br/',
           tech: ['Python', 'Django', 'Bootstrap', 'PostgresSQL'],
           function: ['Desenvolvedora'],
+          repository: 'https://bitbucket.org/communitas/rebec/src/master/',
           results: [
             'Colaborei no desenvolvimento de funcionalidades para facilitar o registro e consulta de estudos clínicos, otimizando a experiência dos usuários (pesquisadores, instituições e público geral).',
             'Trabalhei na implementação de boas práticas de desenvolvimento web, garantindo acessibilidade, performance e segurança da aplicação.',
             'Contribuí para a integração de sistemas e a estruturação de bancos de dados para gerenciar eficientemente as informações dos estudos registrados.'
           ],
+        },
+        {
+          title: 'CoPPLA - Communities of Practice Platform',
+          description:
+            'The CoPPLA product provides a generic platform for building virtual communities of practice for social learning applications through a set of communication and collaboration tools integrated into a common environment for sharing knowledge.',
+          imageUrl:
+            'https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2015/May/12/4029692222-2-communitas-avatar_avatar.png',
+          link: 'https://bitbucket.org/communitas/workspace/repositories/',
+          tech: ['Python', 'Plone', 'Bootstrap'],
+          function: ['Desenvolvedora'],
+          repository: 'https://bitbucket.org/communitas/communities.practice/src/master/',
         },
         
       ],

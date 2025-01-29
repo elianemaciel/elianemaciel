@@ -22,6 +22,7 @@ export interface SanitizedGitHubProjects {
 }
 
 export interface SanitizedExternalProject {
+  repository: string;
   title: string;
   description?: string;
   imageUrl?: string;

@@ -83,6 +83,7 @@ interface ExternalProjects {
     tech: string[];
     function: string[];
     results: string[];
+    repository: string;
   }[];
 }
 
