@@ -256,7 +256,6 @@ const GitProfile = ({ config }: { config: Config }) => {
                         externalProjects={
                           sanitizedConfig.projects.external.projects
                         }
-                        googleAnalyticId={sanitizedConfig.googleAnalytics.id}
                       />
                     )}
                     {sanitizedConfig.publications.length !== 0 && (
